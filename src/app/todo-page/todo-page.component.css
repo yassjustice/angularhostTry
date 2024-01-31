@@ -1,0 +1,120 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 20px;
+  height: 60vh;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode input[type="submit"] {
+  cursor: pointer;
+}
+
+.dark-mode ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #1e1e1e;
+}
+
+.dark-mode li {
+  background-color: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark-mode button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dark-mode h1 {
+  /* background-color: #ffffff; */
+  color: wheat;
+}
+
+
+/* Normal Theme Styles */
+.container:not(.dark-mode) {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.container:not(.dark-mode) input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+}
+
+.container:not(.dark-mode) input[type="submit"] {
+  cursor: pointer;
+}
+
+.container:not(.dark-mode) ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container:not(.dark-mode) li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container:not(.dark-mode) button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container:not(.dark-mode) h1 {
+  color: #333333;
+}
+
+.encompass{
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #6b6b6b;
+}

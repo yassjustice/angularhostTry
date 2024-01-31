@@ -1,0 +1,22 @@
+<div class="encompass">
+    <p>todo-page works!</p>
+    <div [ngClass]="{'dark-mode': isDarkMode, 'container': true}">
+      <button (click)="toggleTheme()" id="toggle-theme">Toggle Theme</button>
+      <ul>
+        <li *ngFor="let todo of todos">
+          {{ todo }}
+          <button (click)="handleDelete(todo)" id="delete-todo">Delete</button>
+        </li>
+      </ul>
+      <form (submit)="addTodo()">
+        <h1>To Do List</h1>
+        <!-- <input [(ngModel)]="todoText" placeholder="Add Todo" />  this one doesn't work at all -->
+        <input [(ngModel)]="todoText" name="todoText" placeholder="Add Todo" />
+        <!-- <input [(ngModel)]="todoText" [ngModelOptions]="{standalone: true}" placeholder="Add Todo" /> -->
+    
+        <input type="submit" value="Add Todo" />
+      </form>
+      <button (click)="handleClearTodos()" id="clear-todos">Delete All</button>
+    </div>
+    
+</div>
